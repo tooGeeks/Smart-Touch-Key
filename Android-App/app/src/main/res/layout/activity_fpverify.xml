@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FPVerify"
+    android:background="@color/backdark"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+    android:layout_marginTop="75dp"
+    android:layout_width="190dp"
+    android:layout_height="190dp"
+    android:layout_gravity="center_horizontal"
+    android:src="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textwhite"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:text="@string/app_name"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/fpricon"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/background_light"
+        android:src="@drawable/fprwhite"
+        android:backgroundTint="@color/zxing_transparent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fpvtxt"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textwhite"
+        android:textAlignment="center"
+        android:paddingHorizontal="10dp"
+        android:textSize="20dp"
+        android:text="Please place your fingertip on the scanner to verify your identity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pbttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/bttngrey"
+        android:textColor="@color/textwhite"
+        android:textSize="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Verify Using PIN"/>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/backdark"
+    android:id="@+id/mainlinear">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mtbar"
+        app:title="Smart Touch Key"
+        android:background="@color/toolbardark"
+        app:titleTextColor="@color/textwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginTop="45dp"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:paddingHorizontal="5dp"
+        android:background="@color/bttngrey"
+        android:textColor="@color/textwhite"
+        android:layout_marginTop="75dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/enterbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Passwords"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:backgroundTint="@color/textwhite"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/scnbttn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/qrcscnnr"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mainor"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="@color/textwhite"
+        android:background="@color/backdark"
+        android:layout_gravity="center_horizontal"
+        android:textSize="35dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/editipholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP Of Desktop"
+        android:textColorHint="@color/textwhite"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginHorizontal="40dp"
+            android:textColorHint="@color/textwhite"
+            android:textColor="@color/textwhite"
+            android:id="@+id/ipedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="580dp"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:paddingHorizontal="5dp"
+        android:background="@color/bttngrey"
+        android:textColor="@color/textwhite"
+        android:id="@+id/connectb"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect using IP"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/conntv"
+        android:text="Connected!!!"
+        android:layout_marginTop="45dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textwhite"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

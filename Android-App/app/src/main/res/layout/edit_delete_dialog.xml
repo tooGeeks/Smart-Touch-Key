@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_dialog"
+    android:orientation="vertical"
+    android:backgroundTint="@color/zxing_transparent">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/backdark">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/eddtxt"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textwhite"
+            android:textSize="40dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eddeb"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@color/bttngrey"
+            android:textColor="@color/textwhite"
+            android:text="Edit Entry"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edddb"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@color/bttngrey"
+            android:textColor="@color/textwhite"
+            android:text="Delete Entry"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="5dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eddcb"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@color/bttngrey"
+            android:textColor="@color/textwhite"
+            android:text="Cancel"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="5dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

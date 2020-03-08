@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillCreds"
+    android:orientation="vertical"
+    android:background="@color/backdark">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mtbar"
+        app:title="Smart Touch Key"
+        android:background="@color/toolbardark"
+        app:titleTextColor="@color/textwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="25dp"
+    android:layout_marginTop="175dp"
+    android:hint="Website Name"
+    android:textColorHint="@color/textwhite"
+    app:errorEnabled="true">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/addwname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoComplete"
+        android:textColor="@color/textwhite"
+        android:textColorHint="@color/textwhite" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="0dp"
+        android:hint="Website URL"
+        android:textColorHint="@color/textwhite"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addwurl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+            android:textColor="@color/textwhite"
+            android:textColorHint="@color/textwhite" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="0dp"
+        android:hint="UserName"
+        android:textColorHint="@color/textwhite"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adduname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+            android:textColor="@color/textwhite"
+            android:textColorHint="@color/textwhite" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="0dp"
+        android:hint="Password"
+        android:textColorHint="@color/textwhite"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/textwhite"
+            android:textColorHint="@color/textwhite" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addentrybttn"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bttngrey"
+        android:textColor="@color/textwhite"
+        android:text="Add Entry"
+        android:textSize="22dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addcanbttn"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bttngrey"
+        android:textColor="@color/textwhite"
+        android:text="Cancel"
+        android:textSize="22dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

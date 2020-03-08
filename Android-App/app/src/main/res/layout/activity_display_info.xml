@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisplayInfo"
+    android:background="@color/backdark">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mtbar"
+        app:title="Smart Touch Key"
+        android:background="@color/toolbardark"
+        app:titleTextColor="@color/textwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+    <LinearLayout
+        android:layout_marginTop="175dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Website : "
+            android:textSize="20dp"
+            android:textColor="@color/textwhite"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/displaywname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/textwhite"
+            android:textSize="17dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Website URL : "
+            android:textSize="20dp"
+            android:textColor="@color/textwhite"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/displaywurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/textwhite"
+            android:textSize="17dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="UserName : "
+            android:textSize="20dp"
+            android:textColor="@color/textwhite"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/displayuname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/textwhite"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/uSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Password : "
+            android:textSize="20dp"
+            android:textColor="@color/textwhite"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/displaypwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/textwhite"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/pSwitch"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+             />
+
+    </LinearLayout>
+
+</LinearLayout>

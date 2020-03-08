@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstTimeActivity2"
+    android:orientation="vertical"
+    android:background="@color/backdark">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/logo"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:textSize="25dp"
+        android:paddingHorizontal="5dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Smart Touch Key"
+        android:textColor="@color/textwhite" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:paddingHorizontal="5dp"
+        android:layout_height="wrap_content"
+        android:text="Please Enter these last Credentials to continue"
+        android:textColor="@color/textwhite" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:hint="Mobile Number"
+        android:textColorHint="@color/textwhite"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addmno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/textwhite"
+            android:textColorHint="@color/textwhite"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="0dp"
+        android:hint="E-mail Address"
+        android:textColorHint="@color/textwhite"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textwhite"
+            android:textColorHint="@color/textwhite"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:hint="Address"
+        android:textColorHint="@color/textwhite"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addadd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textMultiLine"
+            android:textColor="@color/textwhite"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:textColorHint="@color/textwhite"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/errtxt"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="Fill all the compulsory fields"
+            android:textColor="@color/textred"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/prevbttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:background="@color/bttngrey"
+            android:text="Previous"
+            android:textColor="@color/textwhite" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nxtbttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:background="@color/bttngrey"
+            android:text="Next"
+            android:textColor="@color/textwhite" />
+    </LinearLayout>
+</LinearLayout>

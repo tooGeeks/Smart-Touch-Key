@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_dialog"
+    android:orientation="vertical"
+    android:backgroundTint="@android:color/transparent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backdark"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/webtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/textwhite"
+            android:textSize="22dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fpricon"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/background_light"
+            android:src="@drawable/fprwhite"
+            android:backgroundTint="@color/zxing_transparent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fprtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Please place your fingertip on the scanner to verify your identity"
+            android:textColor="@color/textwhite"
+            android:textSize="15dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fpcbttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="@color/bttngrey"
+            android:text="Cancel"
+            android:textColor="@color/textwhite"
+            android:layout_marginBottom="10dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
